@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="container">
+      <div class="caption">
+        <h1>Unit Converter</h1>
+      </div>
+
+      <div class="main">
+        <div class="tab">
+          <div
+            class="tablinks"
+            onclick="openUnit(event, 'temperature')"
+            id="defaultOpen"
+          >
+            <a>
+              <span data-hover="Temperature">Temperature</span>
+            </a>
+          </div>
+          <div class="tablinks" onclick="openUnit(event, 'speed')">
+            <a>
+              <span data-hover="Speed">Speed</span>
+            </a>
+          </div>
+          <div class="tablinks" onclick="openUnit(event, 'weight')">
+            <a>
+              <span data-hover="Weight">Weight</span>
+            </a>
+          </div>
+          <div class="tablinks" onclick="openUnit(event, 'length')">
+            <a>
+              <span data-hover="Length">Length</span>
+            </a>
+          </div>
+          <div class="tablinks" onclick="openUnit(event, 'time')">
+            <a>
+              <span data-hover="Time">Time</span>
+            </a>
+          </div>
+        </div>
+
+        <div id="temperature" class="tabcontent">
+          <h1 class="thermometer">Temperatura Converter</h1>
+          <div class="units">
+            <div class="x3">
+              <p>Celsius</p>
+              <input id="c" onkeyup="temperature('C')" />
+            </div>
+            <div class="x3">
+              <p>Fahrenheit</p>
+              <input id="f" onkeyup="temperature('F')" />
+            </div>
+            <div class="x3">
+              <p>Kelvin</p>
+              <input id="k" onkeyup="temperature('K')" />
+            </div>
+          </div>
+        </div>
+        <div id="speed" class="tabcontent">
+          <p class="speedometer">Speed Converter</p>
+          <div class="units">
+            <div class="x3">
+              <p>KPH</p>
+              <input id="kph" onkeyup="speed('KPH')" />
+            </div>
+            <div class="x3">
+              <p>MPH</p>
+              <input id="mph" onkeyup="speed('MPH')" />
+            </div>
+            <div class="x3">
+              <p>Knots</p>
+              <input id="kn" onkeyup="speed('KN')" />
+            </div>
+          </div>
+        </div>
+        <div id="weight" class="tabcontent">
+          <p class="dumbell">Weight Converter</p>
+          <div class="units">
+            <div class="x4">
+              <p>Kilograms</p>
+              <input id="kg" onkeyup="weight('KG')" />
+            </div>
+            <div class="x4">
+              <p>Pounds</p>
+              <input id="lb" onkeyup="weight('LB')" />
+            </div>
+            <div class="x4">
+              <p>Ounces</p>
+              <input id="oz" onkeyup="weight('OZ')" />
+            </div>
+            <div class="x4">
+              <p>Stones</p>
+              <input id="st" onkeyup="weight('ST')" />
+            </div>
+          </div>
+        </div>
+        <div id="length" class="tabcontent">
+          <p class="ruller">Length Converter</p>
+          <div class="units">
+            <div class="x5">
+              <p>Kilometers</p>
+              <input id="km" onkeyup="length('KM')" />
+            </div>
+            <div class="x5">
+              <p>Miles</p>
+              <input id="mi" onkeyup="length('MI')" />
+            </div>
+            <div class="x5">
+              <p>Yards</p>
+              <input id="yd" onkeyup="length('YD')" />
+            </div>
+            <div class="x5">
+              <p>Inches</p>
+              <input id="in" onkeyup="length('IN')" />
+            </div>
+            <div class="x5">
+              <p>Feet</p>
+              <input id="ft" onkeyup="length('FT')" />
+            </div>
+          </div>
+        </div>
+        <div id="time" class="tabcontent">
+          <p class="clock">Time Converter</p>
+          <div class="units">
+            <div class="x5">
+              <p>Seconds</p>
+              <input id="sec" onkeyup="time('SEC')" />
+            </div>
+            <div class="x5">
+              <p>Minutes</p>
+              <input id="min" onkeyup="time('MIN')" />
+            </div>
+            <div class="x5">
+              <p>Hours</p>
+              <input id="hr" onkeyup="time('HR')" />
+            </div>
+            <div class="x5">
+              <p>Days</p>
+              <input id="day" onkeyup="time('DAY')" />
+            </div>
+            <div class="x5">
+              <p>Years</p>
+              <input id="year" onkeyup="time('YEAR')" />
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- end of main-->
+    </div>
+    <!-- end of container-->
+    <!-- Js Files -->
+    <script src="./index.js"></script>
+  </body>
+</html>
